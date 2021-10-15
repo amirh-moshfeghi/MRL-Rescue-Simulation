@@ -115,17 +115,6 @@ There might be some changes in below table in the last version.if you ran into a
 
 ### ➤ How Rescue Simulation Works
 <sub>
-During rescue operations after a disaster, cooperation is a must. In general the problem is not solvable by a single agent, and a heterogeneous team that dynamically combines individual capabilities in order to solve the task is needed. This requirement is due to the structural diversity of disaster areas, variety of evidence the sensors can perceive and to the necessity of quickly and reliably examining large regions. Yet, the performance of a joint rescue team depends on assembling the right mixture of capabilities and has to be designed as a whole.
-
-Some disaster simulators and some agent simulators run in the disaster relief simulation. There are fire, collapse and blockage simulator as the disaster simulators. There are fire-brigade, ambulance-team, police-force and civilian agent (simulator) as the agent simulator. Participants develop the fire-brigade, ambulance-team and police-force agents’ strategies, which are algorithms. Other simulators are provided from RoboCup Rescue simulation project.
-
-
-disaster area
-the number of each type of agents
-the location of the initial ignition points, building collapse, road blockages
-availability of communication among agents
-In other words, participants need to develop algorithms which are suitable for every scenario.
-
 our system is a java platform which has a specific architecture so we can develop every section as easiest as possible.we use GIS to create a map first and we make some simulators of collision and fire and blockades and so on.then we use clustering algorithms like k-means and assign agents to them with hungarian algorithm.i am assuming that you know how to implement agents or you are using pre-defined agent from ADF.let' s consider an example how to make a search for an agent (calculation of search):
 
 ```java
